@@ -23,17 +23,31 @@ DESCRIPTION = "Construct oligasaccharide structure pdb from a sequence."
 CATEGORY = "Carbohydrate Tools"
 HAS_ADVANCED_OPTIONS = False
 
-MENU_PATH = path.join(path.dirname(path.realpath(__file__)), "GlycamCB_pluginator.json")
+DIR = os.path.dirname(__file__)
 
 class test(nanome.PluginInstance):
     def start(self):
+        print("started")
         Logs.debug("Start Glycam Carbohydrate Builder Plugin")
-        self._menu = nanome.ui.Menu.io.from_json(os.path.join(os.path.dirname(__file__), 'GlycamCB_pluginator.json'))
-        self._menu.enabled=True
+        self.menu = nanome.ui.Menu.io.from_json(os.path.join(DIR, 'GlycamCB_pluginator.json'))
+#        self.settings = SettingsMenu(self, self.open_menu)
 
-    def on_run(self):
-        menu = self.menu
-        menu.enabled = True
+#        self.menu.enabled = True
+#        self.update_menu(self.menu)
+
+#        self.on_run_button()
+#        self.update_menu(self.menu)
+
+
+    def on_run(self,button='TRUE'):
+        self.menu.enabled = True
+        self.update_menu(self.menu)
+
+#    def open_menu(self, menu=None):
+#        self.menu = self._menu
+#        self.menu.enabled = True
+#        self.update_menu(self.menu)
+
         
 def main():
     plugin = nanome.Plugin("GlycamCB", "Input an oligasaccharide sequence and obtain a minimized pdb.", "pdb_from_sequence", False)
