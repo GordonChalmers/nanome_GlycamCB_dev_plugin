@@ -89,12 +89,12 @@ class GlycamCBMenu():
 #  curl -L -o self.molecule_name self.url
 #  pdb file is stored in molecule_name.pdb file
 
-        if self.url_loc>0 and self.url_end_loc>0:
+#        if self.url_loc>0 and self.url_end_loc>0:
             self.command='curl -L -o '+self.molecule_name+'.pdb '+self.url
             print(self.command)
             os.system(self.command)
-        else:
-            print("rcvd_file is empty")
+#        else:
+#            print("rcvd_file is empty")
 
 ### add to Nanome entry list - molecule_name.pdb
 
