@@ -1,0 +1,17 @@
+{
+    "entity": {
+        "inputs": [{
+                "Sequence": {
+                    "payload": "no_sequence"
+                }
+            }
+        ],
+        "services": [{
+                "Build": {
+                    "type": "Build3DStructure"
+                }
+            }
+        ],
+        "type": "Sequence"
+    }
+}

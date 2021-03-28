@@ -1,0 +1,257 @@
+Connected to server plugins-preprod.nanome.ai 8888
+Registered with plugin ID 75 
+=======================================
+
+Error: Plugin encountered an error
+Connected to server plugins-preprod.nanome.ai 8888
+Registered with plugin ID 76 
+=======================================
+
+Error: Plugin encountered an error
+Connected to server plugins-preprod.nanome.ai 8888
+Registered with plugin ID 77 
+=======================================
+
+Connected to server plugins-preprod.nanome.ai 8888
+Registered with plugin ID 78 
+=======================================
+
+Error: Plugin encountered an error
+Connected to server plugins-preprod.nanome.ai 8888
+Registered with plugin ID 79 
+=======================================
+
+Error: Traceback (most recent call last):
+  File "C:\Users\chalm\AppData\Local\Programs\Python\Python38-32\lib\site-packages\nanome\_internal\_plugin_instance.py", line 70, in _run
+    while self._network._receive() and self._process_manager.update():
+  File "C:\Users\chalm\AppData\Local\Programs\Python\Python38-32\lib\site-packages\nanome\_internal\_network\_process_network.py", line 86, in _receive
+    callback(self, received_object, request_id)
+  File "C:\Users\chalm\AppData\Local\Programs\Python\Python38-32\lib\site-packages\nanome\_internal\_network\_commands\_callbacks\_ui_callbacks.py", line 74, in _button_pressed
+    btn._on_button_pressed()
+  File "C:\Users\chalm\AppData\Local\Programs\Python\Python38-32\lib\site-packages\nanome\_internal\_ui\_button.py", line 35, in _on_button_pressed
+    self._pressed_callback(self)
+  File "C:\Users\chalm\Desktop\git_nanome\test\test_menu.py", line 78, in test_run_print
+    self.file3 = open(os.path.join(os.path.dirname(__file__),'build_'+self.text_sequence+'.txt.Response.json'))
+FileNotFoundError: [Errno 2] No such file or directory: 'C:\\Users\\chalm\\Desktop\\git_nanome\\test\\build_glycan sequence.txt.Response.json'
+
+Error: Plugin encountered an error, please check the logs. Traceback (most recent call last):
+  File "C:\Users\chalm\AppData\Local\Programs\Python\Python38-32\lib\site-packages\nanome\_internal\_network\_session.py", line 15, in _read_from_plugin
+    has_proc_data = self.__proc_plugin_pipe.poll()
+  File "C:\Users\chalm\AppData\Local\Programs\Python\Python38-32\lib\multiprocessing\connection.py", line 257, in poll
+    return self._poll(timeout)
+  File "C:\Users\chalm\AppData\Local\Programs\Python\Python38-32\lib\multiprocessing\connection.py", line 328, in _poll
+    _winapi.PeekNamedPipe(self._handle)[0] != 0):
+BrokenPipeError: [WinError 109] The pipe has been ended
+
+Connected to server plugins-preprod.nanome.ai 8888
+Registered with plugin ID 80 
+=======================================
+
+Error: Plugin encountered an error
+Connected to server plugins-preprod.nanome.ai 8888
+Registered with plugin ID 81 
+=======================================
+
+Error: Plugin encountered an error
+Connected to server plugins-preprod.nanome.ai 8888
+Registered with plugin ID 82 
+=======================================
+
+Error: Plugin encountered an error
+Connected to server plugins-preprod.nanome.ai 8888
+Registered with plugin ID 83 
+=======================================
+
+Error: Traceback (most recent call last):
+  File "C:\Users\chalm\AppData\Local\Programs\Python\Python38-32\lib\site-packages\nanome\_internal\_plugin_instance.py", line 70, in _run
+    while self._network._receive() and self._process_manager.update():
+  File "C:\Users\chalm\AppData\Local\Programs\Python\Python38-32\lib\site-packages\nanome\_internal\_network\_process_network.py", line 86, in _receive
+    callback(self, received_object, request_id)
+  File "C:\Users\chalm\AppData\Local\Programs\Python\Python38-32\lib\site-packages\nanome\_internal\_network\_commands\_callbacks\_run.py", line 2, in _run
+    network._on_run()
+  File "C:\Users\chalm\AppData\Local\Programs\Python\Python38-32\lib\site-packages\nanome\_internal\_network\_process_network.py", line 14, in _on_run
+    self._plugin.on_run()
+  File "C:\Users\chalm\Desktop\git_nanome\test\test.py", line 35, in on_run
+    self.request_workspace(self.on_workspace_received)
+AttributeError: 'test' object has no attribute 'on_workspace_received'
+
+Error: Plugin encountered an error, please check the logs. Traceback (most recent call last):
+  File "C:\Users\chalm\AppData\Local\Programs\Python\Python38-32\lib\site-packages\nanome\_internal\_network\_session.py", line 15, in _read_from_plugin
+    has_proc_data = self.__proc_plugin_pipe.poll()
+  File "C:\Users\chalm\AppData\Local\Programs\Python\Python38-32\lib\multiprocessing\connection.py", line 257, in poll
+    return self._poll(timeout)
+  File "C:\Users\chalm\AppData\Local\Programs\Python\Python38-32\lib\multiprocessing\connection.py", line 328, in _poll
+    _winapi.PeekNamedPipe(self._handle)[0] != 0):
+BrokenPipeError: [WinError 109] The pipe has been ended
+
+Connected to server plugins-preprod.nanome.ai 8888
+Registered with plugin ID 84 
+=======================================
+
+Error: Traceback (most recent call last):
+  File "C:\Users\chalm\AppData\Local\Programs\Python\Python38-32\lib\site-packages\nanome\_internal\_plugin_instance.py", line 70, in _run
+    while self._network._receive() and self._process_manager.update():
+  File "C:\Users\chalm\AppData\Local\Programs\Python\Python38-32\lib\site-packages\nanome\_internal\_network\_process_network.py", line 86, in _receive
+    callback(self, received_object, request_id)
+  File "C:\Users\chalm\AppData\Local\Programs\Python\Python38-32\lib\site-packages\nanome\_internal\_network\_commands\_callbacks\_run.py", line 2, in _run
+    network._on_run()
+  File "C:\Users\chalm\AppData\Local\Programs\Python\Python38-32\lib\site-packages\nanome\_internal\_network\_process_network.py", line 14, in _on_run
+    self._plugin.on_run()
+  File "C:\Users\chalm\Desktop\git_nanome\test\test.py", line 36, in on_run
+    self.nanome.api.structure.io.complex_io.from_pdb(os.path.join(os.path.dirname(__file__), 'molecule.pdb'))
+AttributeError: 'test' object has no attribute 'nanome'
+
+Error: Plugin encountered an error, please check the logs. Traceback (most recent call last):
+  File "C:\Users\chalm\AppData\Local\Programs\Python\Python38-32\lib\site-packages\nanome\_internal\_network\_session.py", line 15, in _read_from_plugin
+    has_proc_data = self.__proc_plugin_pipe.poll()
+  File "C:\Users\chalm\AppData\Local\Programs\Python\Python38-32\lib\multiprocessing\connection.py", line 257, in poll
+    return self._poll(timeout)
+  File "C:\Users\chalm\AppData\Local\Programs\Python\Python38-32\lib\multiprocessing\connection.py", line 328, in _poll
+    _winapi.PeekNamedPipe(self._handle)[0] != 0):
+BrokenPipeError: [WinError 109] The pipe has been ended
+
+Connected to server plugins-preprod.nanome.ai 8888
+Registered with plugin ID 85 
+=======================================
+
+Error: Traceback (most recent call last):
+  File "C:\Users\chalm\AppData\Local\Programs\Python\Python38-32\lib\site-packages\nanome\_internal\_plugin_instance.py", line 70, in _run
+    while self._network._receive() and self._process_manager.update():
+  File "C:\Users\chalm\AppData\Local\Programs\Python\Python38-32\lib\site-packages\nanome\_internal\_network\_process_network.py", line 86, in _receive
+    callback(self, received_object, request_id)
+  File "C:\Users\chalm\AppData\Local\Programs\Python\Python38-32\lib\site-packages\nanome\_internal\_network\_commands\_callbacks\_run.py", line 2, in _run
+    network._on_run()
+  File "C:\Users\chalm\AppData\Local\Programs\Python\Python38-32\lib\site-packages\nanome\_internal\_network\_process_network.py", line 14, in _on_run
+    self._plugin.on_run()
+  File "C:\Users\chalm\Desktop\git_nanome\test\test.py", line 36, in on_run
+    self.from_pdb(os.path.join(os.path.dirname(__file__), 'molecule.pdb'))
+AttributeError: 'test' object has no attribute 'from_pdb'
+
+Error: Plugin encountered an error, please check the logs. Traceback (most recent call last):
+  File "C:\Users\chalm\AppData\Local\Programs\Python\Python38-32\lib\site-packages\nanome\_internal\_network\_session.py", line 15, in _read_from_plugin
+    has_proc_data = self.__proc_plugin_pipe.poll()
+  File "C:\Users\chalm\AppData\Local\Programs\Python\Python38-32\lib\multiprocessing\connection.py", line 257, in poll
+    return self._poll(timeout)
+  File "C:\Users\chalm\AppData\Local\Programs\Python\Python38-32\lib\multiprocessing\connection.py", line 328, in _poll
+    _winapi.PeekNamedPipe(self._handle)[0] != 0):
+BrokenPipeError: [WinError 109] The pipe has been ended
+
+Connected to server plugins-preprod.nanome.ai 8888
+Registered with plugin ID 86 
+=======================================
+
+Error: Traceback (most recent call last):
+  File "C:\Users\chalm\AppData\Local\Programs\Python\Python38-32\lib\site-packages\nanome\_internal\_plugin_instance.py", line 70, in _run
+    while self._network._receive() and self._process_manager.update():
+  File "C:\Users\chalm\AppData\Local\Programs\Python\Python38-32\lib\site-packages\nanome\_internal\_network\_process_network.py", line 86, in _receive
+    callback(self, received_object, request_id)
+  File "C:\Users\chalm\AppData\Local\Programs\Python\Python38-32\lib\site-packages\nanome\_internal\_network\_commands\_callbacks\_run.py", line 2, in _run
+    network._on_run()
+  File "C:\Users\chalm\AppData\Local\Programs\Python\Python38-32\lib\site-packages\nanome\_internal\_network\_process_network.py", line 14, in _on_run
+    self._plugin.on_run()
+  File "C:\Users\chalm\Desktop\git_nanome\test\test.py", line 36, in on_run
+    nanome.api.structure.io.complex_io.from_pdb(os.path.join(os.path.dirname(__file__), 'molecule.pdb'))
+AttributeError: module 'nanome.api.structure.io.complex_io' has no attribute 'from_pdb'
+
+Error: Plugin encountered an error, please check the logs. Traceback (most recent call last):
+  File "C:\Users\chalm\AppData\Local\Programs\Python\Python38-32\lib\site-packages\nanome\_internal\_network\_session.py", line 15, in _read_from_plugin
+    has_proc_data = self.__proc_plugin_pipe.poll()
+  File "C:\Users\chalm\AppData\Local\Programs\Python\Python38-32\lib\multiprocessing\connection.py", line 257, in poll
+    return self._poll(timeout)
+  File "C:\Users\chalm\AppData\Local\Programs\Python\Python38-32\lib\multiprocessing\connection.py", line 328, in _poll
+    _winapi.PeekNamedPipe(self._handle)[0] != 0):
+BrokenPipeError: [WinError 109] The pipe has been ended
+
+Connected to server plugins-preprod.nanome.ai 8888
+Registered with plugin ID 87 
+=======================================
+
+Error: Traceback (most recent call last):
+  File "C:\Users\chalm\AppData\Local\Programs\Python\Python38-32\lib\site-packages\nanome\_internal\_plugin_instance.py", line 70, in _run
+    while self._network._receive() and self._process_manager.update():
+  File "C:\Users\chalm\AppData\Local\Programs\Python\Python38-32\lib\site-packages\nanome\_internal\_network\_process_network.py", line 86, in _receive
+    callback(self, received_object, request_id)
+  File "C:\Users\chalm\AppData\Local\Programs\Python\Python38-32\lib\site-packages\nanome\_internal\_network\_commands\_callbacks\_run.py", line 2, in _run
+    network._on_run()
+  File "C:\Users\chalm\AppData\Local\Programs\Python\Python38-32\lib\site-packages\nanome\_internal\_network\_process_network.py", line 14, in _on_run
+    self._plugin.on_run()
+  File "C:\Users\chalm\Desktop\git_nanome\test\test.py", line 37, in on_run
+    nanome.api.structure.io.complex_io.from_pdb(os.path.join(os.path.dirname(__file__), 'molecule.pdb'))
+AttributeError: module 'nanome.api.structure.io.complex_io' has no attribute 'from_pdb'
+
+Error: Plugin encountered an error, please check the logs. Traceback (most recent call last):
+  File "C:\Users\chalm\AppData\Local\Programs\Python\Python38-32\lib\site-packages\nanome\_internal\_network\_session.py", line 15, in _read_from_plugin
+    has_proc_data = self.__proc_plugin_pipe.poll()
+  File "C:\Users\chalm\AppData\Local\Programs\Python\Python38-32\lib\multiprocessing\connection.py", line 257, in poll
+    return self._poll(timeout)
+  File "C:\Users\chalm\AppData\Local\Programs\Python\Python38-32\lib\multiprocessing\connection.py", line 328, in _poll
+    _winapi.PeekNamedPipe(self._handle)[0] != 0):
+BrokenPipeError: [WinError 109] The pipe has been ended
+
+Connected to server plugins-preprod.nanome.ai 8888
+Registered with plugin ID 88 
+=======================================
+
+Error: Plugin encountered an error
+Connected to server plugins-preprod.nanome.ai 8888
+Registered with plugin ID 89 
+=======================================
+
+Error: Plugin encountered an error
+Connected to server plugins-preprod.nanome.ai 8888
+Registered with plugin ID 90 
+=======================================
+
+Error: Traceback (most recent call last):
+  File "C:\Users\chalm\AppData\Local\Programs\Python\Python38-32\lib\site-packages\nanome\_internal\_plugin_instance.py", line 70, in _run
+    while self._network._receive() and self._process_manager.update():
+  File "C:\Users\chalm\AppData\Local\Programs\Python\Python38-32\lib\site-packages\nanome\_internal\_network\_process_network.py", line 86, in _receive
+    callback(self, received_object, request_id)
+  File "C:\Users\chalm\AppData\Local\Programs\Python\Python38-32\lib\site-packages\nanome\_internal\_network\_commands\_callbacks\_run.py", line 2, in _run
+    network._on_run()
+  File "C:\Users\chalm\AppData\Local\Programs\Python\Python38-32\lib\site-packages\nanome\_internal\_network\_process_network.py", line 14, in _on_run
+    self._plugin.on_run()
+  File "C:\Users\chalm\Desktop\git_nanome\test\test.py", line 37, in on_run
+    complex = Complex.io.from_pdb(os.path.join(os.path.dirname(__file__), 'molecule.pdb'))
+NameError: name 'Complex' is not defined
+
+Error: Plugin encountered an error, please check the logs. Traceback (most recent call last):
+  File "C:\Users\chalm\AppData\Local\Programs\Python\Python38-32\lib\site-packages\nanome\_internal\_network\_session.py", line 15, in _read_from_plugin
+    has_proc_data = self.__proc_plugin_pipe.poll()
+  File "C:\Users\chalm\AppData\Local\Programs\Python\Python38-32\lib\multiprocessing\connection.py", line 257, in poll
+    return self._poll(timeout)
+  File "C:\Users\chalm\AppData\Local\Programs\Python\Python38-32\lib\multiprocessing\connection.py", line 328, in _poll
+    _winapi.PeekNamedPipe(self._handle)[0] != 0):
+BrokenPipeError: [WinError 109] The pipe has been ended
+
+Connected to server plugins-preprod.nanome.ai 8888
+Registered with plugin ID 91 
+=======================================
+
+Error: Traceback (most recent call last):
+  File "C:\Users\chalm\AppData\Local\Programs\Python\Python38-32\lib\site-packages\nanome\_internal\_plugin_instance.py", line 70, in _run
+    while self._network._receive() and self._process_manager.update():
+  File "C:\Users\chalm\AppData\Local\Programs\Python\Python38-32\lib\site-packages\nanome\_internal\_network\_process_network.py", line 86, in _receive
+    callback(self, received_object, request_id)
+  File "C:\Users\chalm\AppData\Local\Programs\Python\Python38-32\lib\site-packages\nanome\_internal\_network\_commands\_callbacks\_run.py", line 2, in _run
+    network._on_run()
+  File "C:\Users\chalm\AppData\Local\Programs\Python\Python38-32\lib\site-packages\nanome\_internal\_network\_process_network.py", line 14, in _on_run
+    self._plugin.on_run()
+  File "C:\Users\chalm\Desktop\git_nanome\test\test.py", line 38, in on_run
+    complex = Complex.io.from_pdb(os.path.join(os.path.dirname(__file__), 'molecule.pdb'))
+TypeError: from_pdb() takes 1 positional argument but 2 were given
+
+Error: Plugin encountered an error, please check the logs. Traceback (most recent call last):
+  File "C:\Users\chalm\AppData\Local\Programs\Python\Python38-32\lib\site-packages\nanome\_internal\_network\_session.py", line 15, in _read_from_plugin
+    has_proc_data = self.__proc_plugin_pipe.poll()
+  File "C:\Users\chalm\AppData\Local\Programs\Python\Python38-32\lib\multiprocessing\connection.py", line 257, in poll
+    return self._poll(timeout)
+  File "C:\Users\chalm\AppData\Local\Programs\Python\Python38-32\lib\multiprocessing\connection.py", line 328, in _poll
+    _winapi.PeekNamedPipe(self._handle)[0] != 0):
+BrokenPipeError: [WinError 109] The pipe has been ended
+
+Connected to server plugins-preprod.nanome.ai 8888
+Registered with plugin ID 92 
+=======================================
+
+Error: Plugin encountered an error
