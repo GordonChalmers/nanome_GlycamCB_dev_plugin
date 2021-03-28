@@ -79,8 +79,8 @@ class GlycamCBMenu():
         self.rcvd_file=self.file3.read()
         self.url_loc=self.rcvd_file.find("downloadUrl")
         self.url_end_loc=self.rcvd_file.find("\"",self.url_loc+15)
-        print(self.url_loc+15)
-        print(self.url_end_loc)
+#        print(self.url_loc+15)
+#        print(self.url_end_loc)
         self.url=self.rcvd_file[self.url_loc+15:self.url_end_loc]
 #        print(self.url)
         self.file3.close()
