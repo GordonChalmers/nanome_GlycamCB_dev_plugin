@@ -79,8 +79,8 @@ class GlycamCBMenu():
         self.rcvd_file=self.file3.read()
         self.url_loc=self.rcvd_file.find("downloadUrl")
         self.url_end_loc=self.rcvd_file.find("\"",self.url_loc+15)
-#        print(type(self.url_loc+15))
-#        print(type(self.url_end_loc))
+        print(self.url_loc+15)
+        print(self.url_end_loc)
         self.url=self.rcvd_file[self.url_loc+15:self.url_end_loc]
 #        print(self.url)
         self.file3.close()
@@ -89,9 +89,12 @@ class GlycamCBMenu():
 #  curl -L -o self.molecule_name self.url
 #  pdb file is stored in molecule_name.pdb file
 
-        self.command='curl -L -o '+self.molecule_name+'.pdb '+self.url
-        print(self.command)
-        os.system(self.command)
+        if self.url_loc>0 and self.url_end_loc>0:
+            self.command='curl -L -o '+self.molecule_name+'.pdb '+self.url
+            print(self.command)
+            os.system(self.command)
+        else:
+            print("rcvd_file is empty")
 
 ### add to Nanome entry list - molecule_name.pdb
 
@@ -99,6 +102,8 @@ class GlycamCBMenu():
 
 
 ### now quit plugin
+
+###      quit plugin with message to user in menu on completion status
    
     def test_clear_print(self,button):
         print("test clear button")
