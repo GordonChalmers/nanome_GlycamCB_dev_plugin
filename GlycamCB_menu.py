@@ -16,7 +16,11 @@ class GlycamCBMenu():
         menu = nanome.ui.Menu.io.from_json(os.path.join(os.path.dirname(__file__), 'GlycamCB_pluginator.json'))
         self.plugin=plugin
         self.plugin.menu = menu
-
+# test pdb load into entry list
+#        pdb_path = os.path.join(os.path.dirname(__file__),'molecule.pdb')
+#        print(pdb_path)
+#        self.plugin.send_files_to_load(pdb_path)
+        
 # layout node setup r(un)
         ln_btn_run = self.plugin.menu.root.find_node('RunButton')
         btn_run = ln_btn_run.get_content()
@@ -89,17 +93,17 @@ class GlycamCBMenu():
 #  curl -L -o self.molecule_name self.url
 #  pdb file is stored in molecule_name.pdb file
 
-#        if self.url_loc>0 and self.url_end_loc>0:
+        if self.url_loc>0 and self.url_end_loc>0:
             self.command='curl -L -o '+self.molecule_name+'.pdb '+self.url
             print(self.command)
             os.system(self.command)
-#        else:
-#            print("rcvd_file is empty")
+        else:
+            print("rcvd_file is empty")
 
 ### add to Nanome entry list - molecule_name.pdb
 
-#        self.add_to_workspace('molecule.pdb')
-
+        pdb_file = os.path.join(os.path.dirname(__file__),self.molecule_name)
+        self.plugin.send_files_to_load(pdb_file)
 
 ### now quit plugin
 
@@ -107,7 +111,7 @@ class GlycamCBMenu():
    
     def test_clear_print(self,button):
         print("test clear button")
-        
+
 
 
 # not used
